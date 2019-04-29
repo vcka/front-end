@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <div class="app">
+    {{ message }}
+  </div>
+
+  <div class="center-form">
+
+    <h1>Payment form</h1>
+    <p>Required fields are followed by *</p>
+    <h2>Contact information</h2>
+
+    <form class="first-form">
+      <fieldset>
+        <legend>Title</legend>
+        <input type="radio" name="gender"> Mister<br>
+        <input type="radio" name="gender"> Miss<br>
+      </fieldset>
+    </form><br>
+
+    <form class="second-form">
+      Name: <input type="text"><br>
+      Email: <input type="email"><br>
+      Password: <input type="password">
+    </form>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
