@@ -10,20 +10,35 @@
 <body>
   <div class="container">
     <div class="row justify-content-center">
+      <ul id="generated" class="list-group">
+        <li class="list-group-item">
+          <h1>Chucks jokes. Select group.</h1>
+        </li>
+      </ul>
+    </div>
+    <div class="row justify-content-center">
       <div class="col-4">
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary">Left</button>
-          <button type="button" class="btn btn-secondary">Middle</button>
-          <button type="button" class="btn btn-secondary">Right</button>
+        <button type="button" class="btn btn-primary">Save</button>
+        <select id="categories" class="categories browser-default custom-select" name="">
+          <option id="init" value="remove">Select group</option>
+        </select>
+        <div class="form-group">
+          <label for="inputsm">Search</label>
+          <input class="form-control input-sm" id="inputsm" type="text">
         </div>
       </div>
     </div>
+    <div class="row justify-content-center">
+      <ul id="saved" class="list-group">
+      </ul>
+    </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="js/app.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootpag/1.0.4/jquery.bootpag.min.js"></script>
 </body>
 
 </html>
