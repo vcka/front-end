@@ -55,13 +55,8 @@ var item = null;
           item = value;
           var click = $('#generated').append(`
           <li class="list-group-item"><h1>${value.value}</h1></li>
-          `)
-          click.click(function(e) {
+          `).click(function(e) {
               alert($(this).text())
-              var selected = $(this).attr('class');
-              $('#saved').append(`
-              <li class="list-group-item">${value.value}</li>
-              `)
           });
         }
       });
