@@ -55,10 +55,11 @@ var item = null;
           item = value;
           var click = $('#generated').append(`
           <li class="list-group-item"><h1>${value.value}</h1></li>
-          `).click(function(e) {
-              alert($(this).text())
-          });
+          `)
         }
+      });
+      $('#generated li').click(function(e) {
+          item = $(this).text()
       });
     })
   }
